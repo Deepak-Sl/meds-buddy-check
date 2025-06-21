@@ -8,8 +8,6 @@ MedsBuddy is a full-stack web application designed to help *patients* track thei
 
 - *Frontend* (Vercel): [https://your-frontend-link.vercel.app](https://your-frontend-link.vercel.app)
 - *Backend* (Render): [https://your-backend-link.onrender.com](https://your-backend-link.onrender.com)
-- (Replace these links with your deployed project URLs)
-
 ---
 
 ## 📁 Project Structure
