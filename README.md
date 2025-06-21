@@ -1,77 +1,56 @@
-# MediCare App - 4-6 Hour Assessment
+# 💊 MedsBuddy - Medication Management System
 
-## Live Demo (UI only): https://meds-buddy-check.lovable.app/
+MedsBuddy is a full-stack web application designed to help *patients* track their daily medications and enable *caretakers* to monitor adherence. It supports daily medication logging, role-based dashboards, adherence analytics, and image proof uploads.
 
-## Current State of the codebase
+---
 
-This is a React medication management app with dual user roles (patients/caretakers). Currently features:
+## 🌐 Live Demo
 
-- Role-based dashboard system for each user account with runtime switching (for simplcity)
+- *Frontend* (Vercel): [https://your-frontend-link.vercel.app](https://your-frontend-link.vercel.app)
+- *Backend* (Render): [https://your-backend-link.onrender.com](https://your-backend-link.onrender.com)
+- (Replace these links with your deployed project URLs)
 
-- UI for medication tracking with calendar visualization
+---
 
-- Mock data for streaks, adherence rates, and medication logs
+## 📁 Project Structure
 
-- Photo upload interface for medication proof
+---
 
-- Notification settings UI (non-functional)
+## 🧰 Tech Stack
 
-- All data is stored in local state (no persistence)
+- *Frontend*: React, Vite, Tailwind CSS, React Router DOM, TanStack Query
+- *Backend*: Express.js, SQLite, bcryptjs, CORS
+- *Database*: SQLite (local file)
+- *Deployment*:
+  - Frontend: [Vercel](https://vercel.com)
+  - Backend: [Render](https://render.com)
 
+---
 
-## Core Implementation Tasks
+## 🧪 Features
 
-### Phase 1 (Required - 4 hours):
-- Supabase authentication setup
-- Basic CRUD for adding medications
-- Basic CRUD for marking medication taken for the day
-- Connect one dashboard to real data
+### ✅ Phase 1 (Core)
 
-### Phase 2 (Optional - 2 hours):
-- Caretaker-patient real time updates
-- Basic adherence tracking
+- User authentication (signup/login)
+- Role-based dashboards (Patient / Caretaker)
+- Add medications with dosage and frequency
+- Daily medication tracking and visual feedback
+- Mark medications as taken (with optional image proof)
+- View medication list and adherence report
 
-### Phase 3 (Bonus):
-- File uploads
+### 🔥 Bonus Features
 
-**Provided:**
-- UI components and styles
+- Caretaker view of patient adherence
+- Image uploads for proof of medication
+- Visual calendar-style progress tracking
 
-## Required Features:
-1. User login/signup with Supabase Auth
-2. Add medications (name, dosage, frequency)
-3. View medication list
-4. Mark medication as taken today
-5. Simple adherence percentage display
+---
 
-## Technical Requirements:
-- Use provided React + TypeScript template
-- Integrate Supabase for auth and database
-- Use React Query for data fetching
-- Implement error handling
-- Clean, readable code
+## 🧪 How to Run Locally
 
-## Other Requirements:
-- Use Git with meaningful commits
-- Implement proper form validation
-- Handle loading and error states consistently
-- Write at least 2-3 meaningful tests using vitest
-- Include a README with setup instructions
+### 🖥 Backend Setup
 
-## Technical Challenges:
-
-**Include:**
-- Optimistic updates using react query
-- Proper TypeScript generics usage
-
-## Deployment Bonus:
-Deploy to Vercel/Netlify
-
-## We will evaluate:
-- Code organization and architecture decisions
-- Error handling and edge cases
-- TypeScript usage (proper typing, no `any`)
-- Component composition and reusability
-- State management approach
-- Performance considerations (unnecessary re-renders)
-- Security awareness (input sanitization)
+```bash
+cd backend
+npm install
+node index.js
